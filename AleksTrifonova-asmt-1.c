@@ -4,11 +4,15 @@
 #include <stdio.h>
 
 /* declare global var's */
-int cycletotal, instrtotal, numclasses, instrcount, machinefrequency;
+int cycletotal = 0;
+int instrtotal = 0;
+int numclasse = 0;
+int instrcount =0;
+int machinefrequency = 0;
 /*********************************************************/
 void OPTION1()
 {
-	int i; 
+	int i = 0; 
 	int cpi_class = 0;
 /* declare local var's and initialize*/
 
@@ -36,7 +40,7 @@ return;
 void OPTION2()
 {
 /* declare local var's */
-float averagecpi;
+float averagecpi = 0;
 
 /* calculate CPI average */
 averagecpi = (float)(cycletotal)/instrtotal;
@@ -67,8 +71,8 @@ return;
 void OPTION4()
 {
 /* declare local var's */
-float MIPS;
-float averagecpi;
+float MIPS = 0;
+float averagecpi = 0;
 /* calculate MIPS */
 averagecpi = (float)(cycletotal)/instrtotal;
 
@@ -117,8 +121,7 @@ while(choice != 5){
 		case 4: 
 			OPTION4();
 			break;
-	
-default:
+	default:
  printf("Not valid, please try again"); 
 	
 }//switch statement
