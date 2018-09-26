@@ -6,7 +6,7 @@
 /* declare global var's */
 int cycletotal = 0;
 int instrtotal = 0;
-int numclasse = 0;
+int numclasses = 0;
 int instrcount =0;
 int machinefrequency = 0;
 /*********************************************************/
@@ -121,8 +121,11 @@ while(choice != 5){
 		case 4: 
 			OPTION4();
 			break;
-	default:
- printf("Not valid, please try again"); 
+		case 5:
+			printf("Program will now quit\n");
+			break;
+		default:
+ 			printf("Not valid, please try again"); 
 	
 }//switch statement
 
